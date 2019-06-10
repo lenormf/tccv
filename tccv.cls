@@ -124,16 +124,15 @@
 %         {address}
 %         {phone number}
 %         {email}
-\newcommand\personal[4][]{%
+\newcommand\personal[3][]{%
     \newcommand\SYMBOL[1]{\raisebox{-2pt}{\Large\ding{##1}}}%
     \needspace{0.5\textheight}%
     \newdimen\boxwidth%
     \boxwidth=\dimexpr\linewidth-2\fboxsep\relax%
     \colorbox{personal}{%
     \begin{tabularx}{\boxwidth}{c|X}
-    \SYMBOL{45} & {#2}\smallskip\\
-    \SYMBOL{37} & {#3}\smallskip\\
-    \SYMBOL{41} & \href{mailto:#4}{#4}
+    \SYMBOL{37} & {#2}\smallskip\\
+    \SYMBOL{41} & \href{mailto:#3}{#3}
     \ifstrempty{#1}{}{\smallskip\\ \SYMBOL{229} & \href{https://#1}{#1}}
     \end{tabularx}}}
 
