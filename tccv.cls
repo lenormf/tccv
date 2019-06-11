@@ -65,6 +65,7 @@
 \definecolor{url}{HTML}{506060}
 \definecolor{link}{HTML}{506060}
 \definecolor{header}{HTML}{801010}
+\definecolor{subheader}{HTML}{666666}
 \definecolor{personal}{HTML}{F5DD9D}
 
 % Allow the resume's theme to be B/W only
@@ -91,7 +92,7 @@
     \begin{center}
 	\vskip-\lastskip%
 	{\usekomafont{part} #2} \medskip\\
-	{\fontfamily{pzc}\selectfont\Huge {#1}}
+	{\Huge\color{subheader}\textsc{#1}}
 	\bigskip
     \end{center}]}
 
