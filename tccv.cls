@@ -151,7 +151,7 @@
 	\inskip%
 	{\raggedleft\textsc{##1}\\[1pt]}
 	\ifstrempty{##2}{}{\hspace*{\fill}##2\\[5pt]}
-	{\hspace*{\fill}\Large\textit{##3}}
+	{\hspace*{\fill}\Large ##3}
 	\medskip
 	\renewcommand\inskip{\bigskip}}}
     {\bigskip}
