@@ -147,7 +147,7 @@
 %     One or more paragraphs describing what achieved during this application.
 \newenvironment{eventlist}{%
     \newcommand*\inskip{}
-    \renewcommand\item[3]{%
+    \newcommand\event[3]{%
 	\inskip%
 	{\raggedleft\textsc{##1}\\[1pt]}
 	\ifstrempty{##2}{}{\hspace*{\fill}##2\\[5pt]}
